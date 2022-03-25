@@ -48,8 +48,7 @@ ssize_t api_handle_message(void *vself, void *vmessage) {
     hold(message);
 
     printf("Receiving: %s\n", message->text);
-
-    // more logic here as needed
+       // more logic here as needed
     int ret = api_answer_message(vself, vmessage);
     put(message);
     return ret;
